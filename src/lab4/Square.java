@@ -23,13 +23,13 @@ public class Square{
 
 	public boolean isSquare(){
 		
-		double dAB = A.distance(B); 
+	    double dAB = A.distance(B); 
 	    double dBC = B.distance(C); 
 	    double dCD = C.distance(D); 
 	    double dDA = D.distance(A); 
 
-	    double diagonalAC = A.distance(C); // Diagonal from A to C
-	    double diagonalBD = B.distance(D); // Diagonal from B to D
+	    double diagonalAC = A.distance(C); 
+	    double diagonalBD = B.distance(D); 
  
 
 	  return (dAB == dBC && dBC == dCD && dCD == dDA && diagonalAC == diagonalBD);
